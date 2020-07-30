@@ -35,7 +35,6 @@ rules = association_rules(frequent_itemsets, min_threshold=0.6)
 rules
 
 #%%
-
 rules.sort_values(["lift"], ascending=False).head(10)
 
 # %% scatterplot support vs confidence
