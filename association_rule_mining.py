@@ -54,5 +54,3 @@ sns.scatterplot(x=rules["support"], y=rules["lift"], alpha=0.5)
 plt.xlabel("Support")
 plt.ylabel("Lift")
 plt.title("Support vs Lift")
-
-# %%
