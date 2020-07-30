@@ -38,6 +38,7 @@ rules
 rules.sort_values(["lift"], ascending=False).head(10)
 
 # %% scatterplot support vs confidence
+
 import seaborn as sns
 import matplotlib.pyplot as plt
 
