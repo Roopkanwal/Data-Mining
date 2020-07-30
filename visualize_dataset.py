@@ -65,8 +65,7 @@ df = df[df["Country"] == "United Kingdom"]
 from datetime import datetime
 
 df["YearMonth"] = df["InvoiceDate"].apply(
-    lambda dt: datetime(year=dt.year, month=dt.month, day=1)
-)
+    lambda dt: datetime(year=dt.year, month=dt.month, day=1))
 df["GrossRevenue"] = df["Quantity"] * df["UnitPrice"]
 
 df_year_month = df[["YearMonth", "GrossRevenue"]].groupby("YearMonth").sum()
