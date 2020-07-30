@@ -6,6 +6,7 @@ df = pd.read_csv("DATA475_lab_rectangles_data.csv")
 df["area"] = df["width"] * df["length"]
 
 # %%
+
 summary = [
     ("Total Count", df["area"].shape[0]),
     ("Total Area", df["area"].sum()),
